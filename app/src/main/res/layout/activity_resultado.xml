@@ -4,63 +4,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/colorPrimary"
     tools:context=".ResultadoActivity">
 
-    <Button
-        android:id="@+id/button_voltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/ic_menu_revert"
-        android:text="Return"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/img3"
-        app:layout_constraintHorizontal_bias="0.532"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/img1"
-        android:layout_width="112dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@android:color/holo_orange_dark" />
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
 
-    <ImageView
-        android:id="@+id/img2"
-        android:layout_width="112dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img1"
-        app:srcCompat="@android:color/holo_orange_dark" />
+        <LinearLayout
+            android:layout_width="319dp"
+            android:layout_height="756dp"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/img3"
-        android:layout_width="112dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img2"
-        app:srcCompat="@android:color/holo_orange_dark" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="Cara ou Coroa?"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="172dp">
+
+                <TableRow
+                    android:layout_width="169dp"
+                    android:layout_height="166dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="145dp"
+                        android:layout_height="152dp"
+                        app:srcCompat="@android:color/holo_orange_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tV1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Coroa"
+                        android:textAlignment="viewEnd"
+                        android:textSize="50sp" />
+                </TableRow>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="167dp">
+
+                <TableRow
+                    android:layout_width="167dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="145dp"
+                        android:layout_height="152dp"
+                        app:srcCompat="@android:color/holo_orange_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="183dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coroa"
+                        android:textSize="50sp" />
+                </TableRow>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="350dp"
+                android:layout_height="170dp">
+
+                <TableRow
+                    android:layout_width="167dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="145dp"
+                        android:layout_height="152dp"
+                        app:srcCompat="@android:color/holo_orange_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coroa"
+                        android:textSize="50sp" />
+                </TableRow>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="185dp">
+
+                        <ImageView
+                            android:id="@+id/play"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dollar" />
+                    </TableRow>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TableRow>
+
+            </TableRow>
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
